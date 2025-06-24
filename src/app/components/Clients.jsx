@@ -16,7 +16,7 @@ function Clients() {
     '/b.webp',
     '/v2sk.webp',
     '/abhith.webp',
-    '/integrity.webp',
+    '/integrity.jpg',
     '/cbs.webp',
   ];
 
