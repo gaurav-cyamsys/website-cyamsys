@@ -17,7 +17,7 @@ function Hero() {
   return (
     <section className="sticky top-0 w-full h-screen overflow-hidden bg-gray-900 font-share-tech-mono">
       
-       <video
+       {/* <video
        preload="metadata"
         playsInline
         muted
@@ -29,7 +29,8 @@ function Hero() {
           <source src="/WebsiteContent/Landing_page_bckground.mp4" type="video/mp4" />
           <source src="/WebsiteContent/Landing_page_bckground.webm" type="video/webm" />
           Your browser does not support the video tag.
-        </video>
+        </video> */}
+        <img  className="absolute top-0 left-0 w-full h-full object-cover blur-sm" src='/WebsiteContent/Landing_page_bckground-gif.gif'/>
       
 
       {/* Overlay for better text readability */}

@@ -27,8 +27,7 @@ function About() {
           poster="/WebsiteContent/about-fallback-image.jpg"
         className="absolute top-0 left-0 w-full h-full object-cover border-none"
       >
-        <source src="/WebsiteContent/We_don’t_just_build_products.mp4" type="video/mp4" />
-        <source src="/WebsiteContent/We_don’t_just_build_products.avi" type="video/webm" />
+        <source src="/WebsiteContent/We_don’t_just_build_products.mkv"  />
         Your browser does not support the video tag.
       </video>
 

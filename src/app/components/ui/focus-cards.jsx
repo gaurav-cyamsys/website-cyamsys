@@ -104,6 +104,7 @@ export function FocusCards({ cards, heading }) {
                 </div>
 
                 {/* Image */}
+                  {card.src !== '/3.webp' && card.src !== '/6.webp' && (
                 <div className={`w-full md:w-1/2 ${imageOrder}`}>
                   <motion.div
                     className="relative w-full h-[300px] md:h-[600px] overflow-hidden rounded-3xl shadow-2xl border-8 border-white"
@@ -112,17 +113,22 @@ export function FocusCards({ cards, heading }) {
                       rotate: useTransform(cardProgress, [0, 1], [0, isEven ? -1 : 1])
                     }}
                   >
-                    <img
-                      src={card.src}
-                      alt={card.title}
-                      className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-                    />
+                  
+  <img
+    src={card.src}
+    alt={card.title}
+    className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+  />
+
+                    
                     {/* Premium overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-black/10 to-transparent" />
                     {/* Reflection effect */}
                     <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-white/30 to-transparent" />
                   </motion.div>
                 </div>
+                )
+}
               </div>
             </motion.div>
           );
